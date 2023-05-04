@@ -11,8 +11,7 @@ def solution(sizes):
 
 # 다른 사람 풀이2
 def solution2(sizes):
-    print(max(max(x) for x in sizes))
-    #return max(max(x) for x in sizes) * max(min(x) for x in sizes)
+    return max(max(x) for x in sizes) * max(min(x) for x in sizes)
 
 #print(solution([[60, 50], [30, 70], [60, 30], [80, 40]]))
 print(solution2([[10, 7], [12, 3], [8, 15], [14, 7], [5, 15]]))
