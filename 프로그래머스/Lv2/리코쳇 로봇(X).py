@@ -40,18 +40,16 @@ def solution(board):
 def solution2(board):
     answer = -1
     
-    n, m = len(board), len(board[0])
+    N, M = len(board), len(board[0])
 
     direction = [(0, 1), (0, -1), (1, 0), (-1, 0)]
     
-    for x in range(n):
-        for y in range(m):
+    for x in range(N):
+        for y in range(M):
             if board[x][y] == "R":
                 sx, sy = x, y
-            elif board[x][y] == "G":
-                tx, ty = x, y
     
-    visited = [[False]*m for _ in range(n)]
+    visited = [[False]*M for _ in range(N)]
 
     q = deque()
 
@@ -70,7 +68,7 @@ def solution2(board):
             while 1:
                 nx, ny = x+dx*scope, y+dy*scope
                 
-                if nx < 0 or nx >= n or ny < 0 or ny >= m or board[nx][ny] == "D":
+                if nx < 0 or nx >= N or ny < 0 or ny >= M or board[nx][ny] == "D":
                     if visited[nx-dx][ny-dy] == False:
                         visited[nx-dx][ny-dy] = True
                         q.append((nx-dx, ny-dy, level+1))
