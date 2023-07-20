@@ -11,7 +11,7 @@ def solution(book_time):
     heap = []
     for s, e in book_time_ref:
         if not heap:
-            heappush(heap,e)
+            heappush(heap,e+10)
             continue
         if heap[0] <= s:
             heappop(heap)
@@ -21,7 +21,7 @@ def solution(book_time):
     
     return answer
 
-#print(solution([["09:10", "10:10"], ["10:10", "10:40"]]))
+print(solution([["09:10", "10:10"], ["10:10", "10:40"]]))
 print(solution([["15:00", "17:00"], ["16:40", "18:20"], ["14:20", "15:20"], ["14:10", "19:20"], ["18:20", "21:20"]]))
 print(solution([["09:10", "10:10"], ["10:20", "12:20"]]))
 print(solution([["10:20", "12:30"], ["10:20", "12:30"], ["10:20", "12:30"]]))
