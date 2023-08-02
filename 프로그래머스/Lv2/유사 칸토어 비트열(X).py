@@ -1,4 +1,4 @@
-# 다른 사람 풀이
+# 다른 사람 풀이 1
 # https://velog.io/@sunkyuj/python-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9C%A0%EC%82%AC-%EC%B9%B8%ED%86%A0%EC%96%B4-%EB%B9%84%ED%8A%B8%EC%97%B4
 def f(n,k):
     if n==1:
@@ -21,4 +21,19 @@ def f(n,k):
 def solution(n, l, r):
     return f(n,r) - f(n,l-1)
 
+# 다른 사람 풀이 2
+def solution2(n, l, r):
+    answer = r-l+1
+    for num in range(l-1,r):
+        while num>=1:
+            a,b=divmod(num,5)
+            if b==2 or a==2:
+                answer-=1
+                break
+            num=a
+
+
+    return answer
+
 print(solution(2, 4, 17))
+print(solution2(2, 4, 17))
