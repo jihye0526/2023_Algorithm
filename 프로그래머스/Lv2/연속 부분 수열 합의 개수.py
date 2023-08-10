@@ -1,13 +1,13 @@
 # 내 풀이
 def solution(elements):
-    answer = []
+    answer = set()
     double = elements * 2
     
     for i in range(1, len(elements)+1):
         for j in range(len(double)):
-            answer.append(sum(double[j:j+i]))
+            answer.add(sum(double[j:j+i]))
             
-    return len(set(answer))
+    return len(answer)
 
 # 다른 사람 풀이
 def solution2(elements):
