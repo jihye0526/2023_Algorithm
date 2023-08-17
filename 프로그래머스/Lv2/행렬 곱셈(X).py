@@ -8,5 +8,9 @@ def solution(arr1, arr2):
                 answer[i][j] += arr1[i][k] * arr2[k][j]
     return answer
 
+# 다른 사람 풀이 2
+def productMatrix(A, B):
+    return [[sum(a*b for a, b in zip(A_row,B_col)) for B_col in zip(*B)] for A_row in A]
+
 print(solution([[1, 4], [3, 2], [4, 1]], [[3, 3], [3, 3]]))
-print(solution([[2, 3, 2], [4, 2, 4], [3, 1, 4]], [[5, 4, 3], [2, 4, 1], [3, 1, 1]]))
+print(productMatrix([[2, 3, 2], [4, 2, 4], [3, 1, 4]], [[5, 4, 3], [2, 4, 1], [3, 1, 1]]))
