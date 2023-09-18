@@ -48,3 +48,7 @@ const solution2 = (queue1, queue2) => {
   
     return -1;
   };
+
+  console.log(solution([3, 2, 7, 2], [4, 6, 5, 1]))
+  console.log(solution([1, 2, 1, 2], [1, 10, 1, 2]))
+  console.log(solution([1, 1], [1, 5]))
