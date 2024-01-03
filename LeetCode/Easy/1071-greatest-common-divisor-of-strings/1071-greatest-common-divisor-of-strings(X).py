@@ -1,4 +1,5 @@
 class Solution:
+    # 다른 사람 풀이
     def gcdOfStrings(self, str1: str, str2: str) -> str:
         # 두 문자를 각각 더했을 때 결과가 다르다면 반복되지 않는 경우라는 것
         if str1 + str2 != str2 + str1:
