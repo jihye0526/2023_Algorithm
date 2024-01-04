@@ -1,13 +1,11 @@
-import copy
-
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         answer = []
+        maxCandy = max(candies)
         
         for i in range(len(candies)):
-            temp = copy.deepcopy(candies)
-            temp[i] += extraCandies
-            if temp[i] == max(temp):
+            temp = candies[i] + extraCandies
+            if temp >= maxCandy:
                 answer.append(True)
             else:
                 answer.append(False)
