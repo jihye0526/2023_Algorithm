@@ -1,3 +1,4 @@
+# 다른 사람 풀이
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         count = 0
