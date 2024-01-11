@@ -1,3 +1,4 @@
+# 다른 사람 풀이
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         length = len(nums)
