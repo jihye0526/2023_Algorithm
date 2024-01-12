@@ -1,4 +1,4 @@
-
+# 다른 사람 풀이
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
         first = second = float('inf') 
