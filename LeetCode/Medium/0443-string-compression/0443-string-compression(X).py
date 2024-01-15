@@ -1,3 +1,4 @@
+# 다른 사람 풀이
 class Solution:
     def compress(self, chars: List[str]) -> int:
         i = 0
