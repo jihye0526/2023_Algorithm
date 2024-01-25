@@ -1,3 +1,4 @@
+# 다른 사람 풀이
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
         answer = curr = sum(nums[:k])
