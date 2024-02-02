@@ -1,3 +1,4 @@
+# 다른 사람 풀이
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
         left = right = 0
