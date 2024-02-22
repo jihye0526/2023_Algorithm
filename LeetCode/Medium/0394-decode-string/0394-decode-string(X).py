@@ -1,3 +1,4 @@
+# 다른 사람 풀이
 class Solution:
     def decodeString(self, s: str) -> str:
         st = []

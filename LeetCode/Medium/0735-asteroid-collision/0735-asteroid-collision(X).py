@@ -20,6 +20,7 @@ class Solution:
 class Solution2:
     def asteroidCollision2(self, asteroids: List[int]) -> List[int]:
         stack = []
+        
         for a in asteroids:
             while stack and stack[-1] > 0 > a:
                 if stack[-1] < abs(a):
